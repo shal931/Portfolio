@@ -124,7 +124,7 @@ header {
 }
 
 .profile-text h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
     font-family:'Times New Roman', Times, serif;
     color:#de5caa;  
@@ -226,44 +226,73 @@ header {
 }
 
 /* Projects Section   */
-.projects-section {
-    max-width: 800px;
-    width: 90%;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #ffffff;  
-    box-shadow: 0 4px 4px rgb(254, 194, 241);
-    border-radius: 8px;
+ #projects {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
     text-align: center;
+    color: #de5caa;
 }
 
-.projects-section h2 {
-    font-size: 28px;
-    color: #333;  
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: #cd057d;
+.projects-row {
+    display: flex;
+    gap: 20px;  
+    justify-content: center;
+    flex-wrap: wrap;  
 }
 
-.project {
-    margin-bottom: 20px;
+.project-card {
+    width: 300px;  
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgb(254, 194, 241);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project h3 a {
-    color:#57A773;  
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow:  0 4px 4px rgb(254, 194, 241);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-info {
+    text-align: center;
+    padding: 15px;
+}
+
+.project-title {
+    font-size: 1.25em;
+    margin-top: 10px;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #74afee;
+    color: #fff;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 20px;
+    transition: background-color 0.3s ease;
 }
 
-.project h3 a:hover {
-    text-decoration: underline;
-}
-
-.project p {
-    font-size: 16px;
-    color: #555;  
-    margin-top: 5px;
+.project-link:hover {
+    background-color: #74afee;
 }
 
 /* Contact  */
