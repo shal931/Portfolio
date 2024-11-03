@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio2.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    
+    
+
+    <!-- Main Profile Section -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-picture">
+                <!-- Placeholder image, initially a default or blank placeholder -->
+                <img src="profile.jpg" alt="Profile Picture" id="profileImg" onclick="triggerFileInput()">
+                <!-- Hidden file input -->
+                <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="loadImage(event)">
+            </div>
+            <div class="profile-text">
+                <h2>Welcome to My Profile</h2>
+                <p>I’m <i>Shalvi</i>, a passionate web developer dedicated to building innovative and user-friendly digital experiences.
+                     With expertise in  HTML,CSS, etc.
+                     I strive to create websites that not only look great but also perform seamlessly. 
+                     Thank you for visiting my portfolio—let’s connect and bring your ideas to life!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr style="border: 1px solid #cd057d ; width: 100%; margin: 20px auto;">
+    
+    
+     <!-- About Me Section -->
+     <section id="aboutme" class="about-me-section">
+        <h2>About Me</h2>
+        <p>Hello! I’m a passionate web developer with a knack for building dynamic, responsive websites and applications. 
+            With skills in HTML, CSS, JavaScript, and React, I enjoy creating user-friendly interfaces and solving complex problems through code.
+             I’m always eager to learn new technologies and improve my skills to deliver the best possible experience for users.
+        </p>
+    </section>
+
+
+
+    <!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-logos">
+        <img src="html.jpg" alt="HTML Logo" class="skill-logo">
+        <img src="css.png" alt="CSS Logo" class="skill-logo">
+        <img src="javascript.png" alt="JavaScript Logo" class="skill-logo">
+        <img src="react.png" alt="React Logo" class="skill-logo">
+        
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3><a href="#" target="_blank">Project 1</a></h3>
+        <p>A brief description of Project 1.</p>
+    </div>
+    <div class="project">
+        <h3><a href="#" target="_blank">Project 2</a></h3>
+        <p>A brief description of Project 2.</p>
+    </div>
+     
+</section>
+</div>
+
+<!--contact me form-->
+<section id="contact">
+    <h2 id="conatct-text">Contact Me</h2>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="enter your name"  required/>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="enter your email" required/>
+  
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" name="phone" required/>
+  
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" />
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Send</button>
+    </form>
+  
+    <div id="social-links">
+      <a href="insta" target="_blank">
+        <img src="insta.png" alt="insta Logo" />
+      </a>
+      <a href="linkedin" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn Logo" />
+      </a>
+    </div>
+  </section>
+
+
+    <script src="portfolio2.js"></script>
+</body>
+</html>
